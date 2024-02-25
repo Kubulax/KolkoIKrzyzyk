@@ -5,7 +5,7 @@
              BackgroundColor="LightCyan">
 
     <StackLayout>
-        <Frame BackgroundColor="DarkCyan">
+        <Frame BackgroundColor="DarkCyan" CornerRadius="0">
             <Grid BackgroundColor="DarkCyan" ColumnSpacing="4" RowSpacing="4">
                 <Grid.RowDefinitions>
                     <RowDefinition/>
@@ -18,25 +18,25 @@
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
 
-                <Button x:Name="lbl_R0_C0" Clicked="DrawSymbol" Grid.Row="0" Grid.Column="0" FontSize="100" Text="×" BackgroundColor="LightBlue" CornerRadius="0"/>
-                <Button x:Name="lbl_R0_C1" Clicked="DrawSymbol" Grid.Row="0" Grid.Column="1" FontSize="100" Text="○" BackgroundColor="LightBlue" CornerRadius="0"/>
-                <Button x:Name="lbl_R0_C2" Clicked="DrawSymbol" Grid.Row="0" Grid.Column="2" FontSize="100" Text="○" BackgroundColor="LightBlue" CornerRadius="0"/>
+                <Button x:Name="lbl_R0_C0" Clicked="DrawSymbol" Grid.Row="0" Grid.Column="0" FontSize="100" BackgroundColor="LightBlue" CornerRadius="0"/>
+                <Button x:Name="lbl_R0_C1" Clicked="DrawSymbol" Grid.Row="0" Grid.Column="1" FontSize="100" BackgroundColor="LightBlue" CornerRadius="0"/>
+                <Button x:Name="lbl_R0_C2" Clicked="DrawSymbol" Grid.Row="0" Grid.Column="2" FontSize="100" BackgroundColor="LightBlue" CornerRadius="0"/>
 
-                <Button x:Name="lbl_R1_C0" Clicked="DrawSymbol" Grid.Row="1" Grid.Column="0" FontSize="100" Text="×" BackgroundColor="LightBlue" CornerRadius="0"/>
-                <Button x:Name="lbl_R1_C1" Clicked="DrawSymbol" Grid.Row="1" Grid.Column="1" FontSize="100" Text="×" BackgroundColor="LightBlue" CornerRadius="0"/>
-                <Button x:Name="lbl_R1_C2" Clicked="DrawSymbol" Grid.Row="1" Grid.Column="2" FontSize="100" Text="×" BackgroundColor="LightBlue" CornerRadius="0"/>
+                <Button x:Name="lbl_R1_C0" Clicked="DrawSymbol" Grid.Row="1" Grid.Column="0" FontSize="100" BackgroundColor="LightBlue" CornerRadius="0"/>
+                <Button x:Name="lbl_R1_C1" Clicked="DrawSymbol" Grid.Row="1" Grid.Column="1" FontSize="100" BackgroundColor="LightBlue" CornerRadius="0"/>
+                <Button x:Name="lbl_R1_C2" Clicked="DrawSymbol" Grid.Row="1" Grid.Column="2" FontSize="100" BackgroundColor="LightBlue" CornerRadius="0"/>
 
-                <Button x:Name="lbl_R2_C0" Clicked="DrawSymbol" Grid.Row="2" Grid.Column="0" FontSize="100" Text="×" BackgroundColor="LightBlue" CornerRadius="0"/>
-                <Button x:Name="lbl_R2_C1" Clicked="DrawSymbol" Grid.Row="2" Grid.Column="1" FontSize="100" Text="×" BackgroundColor="LightBlue" CornerRadius="0"/>
-                <Button x:Name="lbl_R2_C2" Clicked="DrawSymbol" Grid.Row="2" Grid.Column="2" FontSize="100" Text="×" BackgroundColor="LightBlue" CornerRadius="0"/>
+                <Button x:Name="lbl_R2_C0" Clicked="DrawSymbol" Grid.Row="2" Grid.Column="0" FontSize="100" BackgroundColor="LightBlue" CornerRadius="0"/>
+                <Button x:Name="lbl_R2_C1" Clicked="DrawSymbol" Grid.Row="2" Grid.Column="1" FontSize="100" BackgroundColor="LightBlue" CornerRadius="0"/>
+                <Button x:Name="lbl_R2_C2" Clicked="DrawSymbol" Grid.Row="2" Grid.Column="2" FontSize="100" BackgroundColor="LightBlue" CornerRadius="0"/>
             </Grid>
         </Frame>
 
         <Frame BackgroundColor="DarkCyan" CornerRadius="0">
-            <Label Text="Gra teraz: ×" HorizontalOptions="Center" FontSize="30" FontAttributes="Bold" TextColor="Black"/>
+            <Label x:Name="lbl_playerIndicator" Text="Teraz gra: ×" HorizontalOptions="Center" FontSize="30" FontAttributes="Bold" TextColor="Black"/>
         </Frame>
-        <Label Text="× 0 : 0 ○" HorizontalOptions="Center" FontSize="50" FontAttributes="Bold" TextColor="Black"/>
-        <Button Clicked="ResetRound" Text="Resetuj rundę" FontSize="20" FontAttributes="Bold" HorizontalOptions="Center" Padding="15" WidthRequest="200" BackgroundColor="MediumTurquoise" BorderColor="DarkCyan" BorderWidth="5" CornerRadius="5"/>
+        <Label x:Name="lbl_score" Text="× 0 : 0 ○" HorizontalOptions="Center" FontSize="50" FontAttributes="Bold" TextColor="Black"/>
+        <Button Clicked="NewRound" Text="Nowa runda" FontSize="20" FontAttributes="Bold" HorizontalOptions="Center" Padding="15" WidthRequest="200" BackgroundColor="MediumTurquoise" BorderColor="DarkCyan" BorderWidth="5" CornerRadius="5"/>
         <Button Clicked="ResetGame" Text="Resetuj grę" FontSize="20" FontAttributes="Bold" HorizontalOptions="Center" Padding="15" WidthRequest="200" BackgroundColor="MediumTurquoise" BorderColor="DarkCyan" BorderWidth="5" CornerRadius="5"/>
     </StackLayout>
 
